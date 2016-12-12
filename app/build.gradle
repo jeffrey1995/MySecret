@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    signingConfigs {
+        release {
+            storeFile file("mrtian.jks")
+            storePassword "t123456"
+            keyAlias "mrtian"
+            keyPassword "t123456"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.mrtian.isecret"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 102
+        versionName "1.0.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.liferay.org.apache.commons.fileupload:com.liferay.org.apache.commons.fileupload:6.2.0.1'
+    compile 'org.apache.directory.studio:org.apache.commons.codec:1.8'
+    compile 'com.android.support:design:23.4.0'
+}

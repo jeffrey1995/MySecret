@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">口令笔记</string>
+    <string name="title_activity_add_secret">AddSecretActivity</string>
+    <string name="settings_explain">使用说明</string>
+    <string name="explain_text_01">\
+        1.点击主页右上角的\"+\"号进行笔记添加.\n
+        2.长按列表项目可以查看/编辑/删除笔记.\n
+        3.导出/导入功能方便数据的转移,因为是以密文的形式,所以请放心.
+    </string>
+    <string name="explain_text_02">\
+        1.本软件采用AES加密算法,添加时需要用户输入口令(密钥),本地不保存,所以请牢记口令,查看/编辑必需要口令.\n
+        2.本地只保存内容的密文,通过这样的方式保证了理论安全,请放心记录你的重要信息.
+    </string>
+    <string name="explain_text_03">\
+        1.可以将你比较重要的信息添加到条目中(例如一大堆乱七八糟的账号密码等),同时设置一个口令,只需要记住这一个口令即可.\n
+        2.一些不那么重要的信息,你可以将设置的口令保存在标题中,防止遗忘口令.\n
+        3.软件重新安装后,只需要将之前导出的密文导入程序即可恢复数据.
+    </string>
+    <string name="settings_about">关于软件</string>
+    <string name="about_text">\
+        1.使用它的人要天天开心!\n
+        2.实在不开心的时候就把心烦的事情写在这里,它会永远替你保密哦!\n
+        3.看看下面的棒棒糖,是不是心情好多了呀? ^_^
+    </string>
+    <string name="data_in">导入数据</string>
+    <string name="data_out">导出数据</string>
+</resources>
